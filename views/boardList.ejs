@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title><%=title%></title>
+<link href="/style/css/style2.css" rel="stylesheet">
+</head>
+<body>
+<header>
+	<h2 class="mainTitle"><%=title%></h2>	
+</header>
+
+<section>	
+	<table class="listTable">
+		<tr>
+			<th>No</th>
+			<th>제목</th>
+			<th>작성자</th>
+			<th>조회</th>
+			<th>추천</th>
+			<th>날짜</th>
+		</tr>	
+		<% for(let i=0;i <data.length;i++) {%>
+		<tr>
+			<td><%=i%></td>
+			<td><%=data[i].subject%></td>
+			<td><%=data[i].writer%></td>
+			<td><%=data[i].viewcnt%></td>
+			<td><%=data[i].recom%></td>
+			<td><%=data[i].writeday%></td>
+		</tr>	
+		<%}%>
+		
+	</table>
+	
+	</section>
+
+</body>
+</html>

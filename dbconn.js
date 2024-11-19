@@ -8,7 +8,7 @@ const conn_info= { //접속정보 입력
     database : 'aws0822'
 };
 
-modeule.exports={
+module.exports = {
     init : function() {
         return mysql.createConnection(conn_info);
     },
